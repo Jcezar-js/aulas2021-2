@@ -16,3 +16,4 @@ plt.show()
 
 sns.distplot(data.SalePrice.head(1000))
 plt.show()
+#01:11:00
