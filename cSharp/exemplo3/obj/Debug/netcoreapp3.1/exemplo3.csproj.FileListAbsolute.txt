@@ -1,0 +1,13 @@
+D:\Doc's\aulas2021-2\cSharp\exemplo3\bin\Debug\netcoreapp3.1\exemplo3.exe
+D:\Doc's\aulas2021-2\cSharp\exemplo3\bin\Debug\netcoreapp3.1\exemplo3.deps.json
+D:\Doc's\aulas2021-2\cSharp\exemplo3\bin\Debug\netcoreapp3.1\exemplo3.runtimeconfig.json
+D:\Doc's\aulas2021-2\cSharp\exemplo3\bin\Debug\netcoreapp3.1\exemplo3.runtimeconfig.dev.json
+D:\Doc's\aulas2021-2\cSharp\exemplo3\bin\Debug\netcoreapp3.1\exemplo3.dll
+D:\Doc's\aulas2021-2\cSharp\exemplo3\bin\Debug\netcoreapp3.1\exemplo3.pdb
+D:\Doc's\aulas2021-2\cSharp\exemplo3\obj\Debug\netcoreapp3.1\exemplo3.csprojAssemblyReference.cache
+D:\Doc's\aulas2021-2\cSharp\exemplo3\obj\Debug\netcoreapp3.1\exemplo3.AssemblyInfoInputs.cache
+D:\Doc's\aulas2021-2\cSharp\exemplo3\obj\Debug\netcoreapp3.1\exemplo3.AssemblyInfo.cs
+D:\Doc's\aulas2021-2\cSharp\exemplo3\obj\Debug\netcoreapp3.1\exemplo3.csproj.CoreCompileInputs.cache
+D:\Doc's\aulas2021-2\cSharp\exemplo3\obj\Debug\netcoreapp3.1\exemplo3.dll
+D:\Doc's\aulas2021-2\cSharp\exemplo3\obj\Debug\netcoreapp3.1\exemplo3.pdb
+D:\Doc's\aulas2021-2\cSharp\exemplo3\obj\Debug\netcoreapp3.1\exemplo3.genruntimeconfig.cache
