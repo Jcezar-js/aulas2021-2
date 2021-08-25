@@ -1,0 +1,4 @@
+br/com/up/aula2/MainActivity.java
+ br.com.up.aula2.MainActivity
+br/com/up/aula2/BuildConfig.java
+ br.com.up.aula2.BuildConfig
