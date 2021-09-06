@@ -2,6 +2,7 @@ package br.com.up.appurlsfavoritas;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -11,9 +12,15 @@ import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.util.ArrayList;
+
+import br.com.up.appurlsfavoritas.adapter.UrlAdapter;
+
 public class MainActivity extends AppCompatActivity {
 
     private FloatingActionButton fabAddLink;
+    private RecyclerView recyclerView;
+    private ArrayList<String> urllist = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,15 +28,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         fabAddLink = findViewById(R.id.fab_main_add_link);
-//       fabAddLink.setImageResource(R.drawable.ic_launcher_foreground);
+        recyclerViewUrls = findViewById(R.id.recycler_main_list_link);
 
-//        View.OnClickListener listener = new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Toast.makeText(getBaseContext(), "Clicou", Toast.LENGTH_LONG).show();
-//            }
-//        };
-
+        UrlAdapter adapter
 
         fabAddLink.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == 1234 && resultCode == RESULT_OK){
             String url = data.getStringExtra("link");
             Toast.makeText(getBaseContext(), "URL " + url, Toast.LENGTH_LONG).show();
+            urllist.add(url);
         }
     }
 
