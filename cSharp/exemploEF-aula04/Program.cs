@@ -9,6 +9,7 @@ namespace exemploEF_aula04
         {
             ExemploContext ctx = new ExemploContext();
             var p = new Pessoa();
+            
             p.Nome = "João";
             ctx.Pessoas.Add(p);
 
@@ -19,7 +20,7 @@ namespace exemploEF_aula04
             var pessoas = ctx.Pessoas;
             foreach (var pessoa in pessoas)
             {
-                Console.WriteLine($"Nome: [pessoa.Nome]");
+                Console.WriteLine($"Nome: {p.Nome}");
             }
         }
     }

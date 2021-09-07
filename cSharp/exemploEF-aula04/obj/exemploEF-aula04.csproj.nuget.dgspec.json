@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/julio/Documentos/Faculdade/aulas2021-2/cSharp/exemploEF-aula04/exemploEF-aula04.csproj": {}
+    "D:\\faculdade\\aulas2021-2\\cSharp\\exemploEF-aula04\\exemploEF-aula04.csproj": {}
   },
   "projects": {
-    "/home/julio/Documentos/Faculdade/aulas2021-2/cSharp/exemploEF-aula04/exemploEF-aula04.csproj": {
+    "D:\\faculdade\\aulas2021-2\\cSharp\\exemploEF-aula04\\exemploEF-aula04.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/julio/Documentos/Faculdade/aulas2021-2/cSharp/exemploEF-aula04/exemploEF-aula04.csproj",
+        "projectUniqueName": "D:\\faculdade\\aulas2021-2\\cSharp\\exemploEF-aula04\\exemploEF-aula04.csproj",
         "projectName": "exemploEF-aula04",
-        "projectPath": "/home/julio/Documentos/Faculdade/aulas2021-2/cSharp/exemploEF-aula04/exemploEF-aula04.csproj",
-        "packagesPath": "/home/julio/.nuget/packages/",
-        "outputPath": "/home/julio/Documentos/Faculdade/aulas2021-2/cSharp/exemploEF-aula04/obj/",
+        "projectPath": "D:\\faculdade\\aulas2021-2\\cSharp\\exemploEF-aula04\\exemploEF-aula04.csproj",
+        "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
+        "outputPath": "D:\\faculdade\\aulas2021-2\\cSharp\\exemploEF-aula04\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/julio/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\julio\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

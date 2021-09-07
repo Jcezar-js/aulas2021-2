@@ -9,8 +9,8 @@ using models;
 namespace exemploEF_aula04.Migrations
 {
     [DbContext(typeof(ExemploContext))]
-    [Migration("20210825154112_Initial")]
-    partial class Initial
+    [Migration("20210906194924_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
