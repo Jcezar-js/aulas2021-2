@@ -2,6 +2,8 @@ package br.com.up.appurlsfavoritas;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
@@ -20,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     private FloatingActionButton fabAddLink;
     private RecyclerView recyclerViewUrls;
+
     private ArrayList<String> urllist = new ArrayList<>();
 
     @Override
@@ -30,7 +33,15 @@ public class MainActivity extends AppCompatActivity {
         fabAddLink = findViewById(R.id.fab_main_add_link);
         recyclerViewUrls = findViewById(R.id.recycler_main_list_link);
 
-        UrlAdapter adapter;
+        UrlAdapter adapter = new UrlAdapter(urllist);
+        recyclerViewUrls.setAdapter(adapter);
+
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        recyclerViewUrls.setLayoutManager(linearLayoutManager);
+
+        //GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 3);
+
+
 
         fabAddLink.setOnClickListener(new View.OnClickListener() {
             @Override
