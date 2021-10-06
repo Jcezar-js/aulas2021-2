@@ -23,6 +23,7 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+        setTitle("cadastro de links");
 
         buttonSave = findViewById(R.id.button_register_save);
         inputEditText = findViewById(R.id.input_register_link);
@@ -36,13 +37,13 @@ public class RegisterActivity extends AppCompatActivity {
         });
     }
     private void saveLink() {
-        String link = inputEditText.getEditableText().toString();
-        if (link.isEmpty()) {
+        String url = inputEditText.getEditableText().toString();
+        if (url.isEmpty()) {
             inputEditText.setError("Favor verificar o link digitado.");
         }else{
 
             Intent intent  = new Intent();
-            intent.putExtra("Link", link);
+            intent.putExtra("Link", url);
             setResult(RESULT_OK,intent);
             finish();
         }
