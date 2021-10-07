@@ -35,10 +35,15 @@ public class MainActivity extends AppCompatActivity {
 
         fabAddLink = findViewById(R.id.fab_main_add_link);
         recyclerViewUrls = findViewById(R.id.recycler_main_list_link);
-       // textViewNotFound = findViewById(R.id.text_view_links_not_found);
+        // textViewNotFound = findViewById(R.id.text_view_links_not_found);
 
-
-        UrlAdapter adapter = new UrlAdapter(urlList);
+        UrlAdapter adapter = new UrlAdapter(urlList,
+                new UrlAdapter.OnLinkClickListener() {
+                    @Override
+                    public void onClick(String url) {
+                        callBrowserWithUrl(url);
+                    }
+                });
         recyclerViewUrls.setAdapter(adapter);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
@@ -60,9 +65,12 @@ public class MainActivity extends AppCompatActivity {
 
     private void callRegisterActivity() {
 
-        Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
+        Intent intent = new Intent(
+                MainActivity.this,
+                RegisterActivity.class
+        );
 
-        startActivityForResult(intent, 1234);
+        startActivityForResult(intent,1234);
     }
 
     @Override
@@ -71,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (requestCode == 1234 && resultCode == RESULT_OK){
             String url = data.getStringExtra("link");
-            Toast.makeText(getBaseContext(), "URL " + url, Toast.LENGTH_LONG).show();
+            Toast.makeText(getBaseContext(), "URL" + url,Toast.LENGTH_LONG).show();
             urlList.add(url);
           //  textViewNotFound.setVisibility(View.GONE);
         }

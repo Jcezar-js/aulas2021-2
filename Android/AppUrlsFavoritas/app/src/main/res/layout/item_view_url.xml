@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:text="TextView"
+        android:text="asdasdadasd"
         app:layout_constraintBottom_toBottomOf="@+id/image_icon_url"
         app:layout_constraintEnd_toStartOf="@+id/image_icon_url_go"
         app:layout_constraintStart_toEndOf="@+id/image_icon_url"

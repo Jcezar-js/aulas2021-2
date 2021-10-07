@@ -6,9 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class RegisterActivity extends AppCompatActivity {
@@ -43,7 +41,8 @@ public class RegisterActivity extends AppCompatActivity {
         }else{
 
             Intent intent  = new Intent();
-            intent.putExtra("Link", url);
+            intent.putExtra("Link",url);
+
             setResult(RESULT_OK,intent);
             finish();
         }
