@@ -11,17 +11,14 @@ import com.google.android.material.textfield.TextInputEditText;
 
 public class RegisterActivity extends AppCompatActivity {
 
-
     private Button buttonSave;
-
     private TextInputEditText inputEditText;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        setTitle("cadastro de links");
+        setTitle("Cadastro de Link's");
 
         buttonSave = findViewById(R.id.button_register_save);
         inputEditText = findViewById(R.id.input_register_link);
@@ -34,14 +31,16 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
     }
+
     private void saveLink() {
+
         String url = inputEditText.getEditableText().toString();
-        if (url.isEmpty()) {
-            inputEditText.setError("Favor verificar o link digitado.");
+        if(url.isEmpty()){
+            inputEditText.setError("Favor verificar o link digitado");
         }else{
 
-            Intent intent  = new Intent();
-            intent.putExtra("Link",url);
+            Intent intent = new Intent();
+            intent.putExtra("link",url);
 
             setResult(RESULT_OK,intent);
             finish();
