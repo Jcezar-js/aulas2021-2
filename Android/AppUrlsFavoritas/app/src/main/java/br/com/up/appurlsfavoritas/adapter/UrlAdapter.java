@@ -37,7 +37,6 @@ public class UrlAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
         return urlViewHolder;
     }
-
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
 
