@@ -3,7 +3,8 @@ package br.com.up.mypokedex.model;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Pokemon implements Serializable {
+//Serialização serve para Organizar os dados de uma forma legível
+public class  Pokemon implements Serializable {
 
     private int id;
     private String name;

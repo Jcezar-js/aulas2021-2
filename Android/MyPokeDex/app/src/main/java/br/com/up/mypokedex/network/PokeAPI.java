@@ -11,23 +11,27 @@ import br.com.up.mypokedex.model.Pokemon;
 public class PokeAPI {
 
     public ArrayList<Pokemon> getPokemons(){
-        ConnectionAsyncTask connectionAsyncTask =  new ConnectionAsyncTask(new ConnectionAsyncTask.ConnectionListener() {
-            @Override
-            public void onRequestFinish(JSONObject object) {
 
-                try {
-                    JSONArray results = object.getJSONArray("results");
+        ConnectionAsyncTask connectionAsyncTask =  new ConnectionAsyncTask();
+        connectionAsyncTask.execute("https://pokeapi.co/api/v2/pokemon?limit=1500");
 
-                    for (int index = 0; index <results.length(); index++){
-                        JSONObject objectPokemon = results.getJSONObject(index);
 
-                        String name = objectPokemon.getString("name");
-                        String url =  objectPokemon.getString("url");
-                        String id = url.replace()
-                    }
-                }catch ()
+        ArrayList<Pokemon> pokemons = new ArrayList<>();
 
-            }
-        }
+        pokemons.add(new Pokemon(1,"bulbasaur","https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"));
+        pokemons.add(new Pokemon(2,"ivysaur","https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png"));
+        pokemons.add(new Pokemon(3,"venusaur","https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png"));
+
+        pokemons.add(new Pokemon(4,"charmander","https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"));
+        pokemons.add(new Pokemon(5,"charmeleon","https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png"));
+        pokemons.add(new Pokemon(6,"charizard","https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png"));
+
+        pokemons.add(new Pokemon(7,"squirtle","https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png"));
+        pokemons.add(new Pokemon(8,"wartortle","https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png"));
+        pokemons.add(new Pokemon(9,"blastoise","https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png"));
+
+
+        return pokemons;
     }
+
 }
