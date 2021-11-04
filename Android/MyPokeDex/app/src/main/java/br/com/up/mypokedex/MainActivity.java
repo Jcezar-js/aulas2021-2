@@ -19,8 +19,6 @@ import java.util.ArrayList;
 
 import br.com.up.mypokedex.adapter.PokemonAdapter;
 import br.com.up.mypokedex.model.Pokemon;
-import br.com.up.mypokedex.network.ConnectionAsyncTask;
-import br.com.up.mypokedex.network.PokeAPI;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,11 +37,11 @@ public class MainActivity extends AppCompatActivity {
 
         PokemonAdapter adapter = new PokemonAdapter(pokemons,
                 new PokemonAdapter.PokemonClickListener() {
-            @Override
-            public void onPokemonClick(Pokemon pokemon) {
-                callPokemonDetail(pokemon);
-            }
-        });
+                    @Override
+                    public void onPokemonClick(Pokemon pokemon) {
+                        callPokemonDetail(pokemon);
+                    }
+                });
 
         recyclerViewPokemon.setAdapter(adapter);
         ConnectionAsyncTask connectionAsyncTask =  new ConnectionAsyncTask();
