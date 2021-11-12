@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/faculdade/aulas2021-2/Android/MyPokeDex/app/src/main/res/layout/activity_detail.xml" value="0.33" />
         <entry key="..\:/faculdade/aulas2021-2/Android/MyPokeDex/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/faculdade/aulas2021-2/Android/MyPokeDex/app/src/main/res/layout/item_view_pokemon.xml" value="0.22" />
       </map>

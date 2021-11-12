@@ -4,13 +4,17 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 //Serialização serve para Organizar os dados de uma forma legível
-public class  Pokemon implements Serializable {
+public class Pokemon implements Serializable {
 
     private int id;
     private String name;
     private String image;
+    private String genre;
     private ArrayList<String> moves;
     private ArrayList<String> types;
+    private ArrayList<String> abilities;
+    private ArrayList<String> Stats;
+
 
     public Pokemon(int id, String name, String image) {
         this.id = id;
@@ -57,4 +61,16 @@ public class  Pokemon implements Serializable {
     public void setTypes(ArrayList<String> types) {
         this.types = types;
     }
+
+    public String getGenre() {  return genre; }
+
+    public void setGenre(String genre) { this.genre = genre; }
+
+    public ArrayList<String> getAbilities() { return abilities;  }
+
+    public void setAbilities(ArrayList<String> abilities) { this.abilities = abilities; }
+
+    public ArrayList<String> getStats() { return Stats; }
+
+    public void setStats(ArrayList<String> stats) { Stats = stats; }
 }
