@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
 
-import java.security.Policy;
 import java.util.ArrayList;
 
 import br.com.up.mypokedex.R;
@@ -68,7 +67,7 @@ public class PokemonAdapter extends RecyclerView.Adapter<PokemonAdapter.PokemonV
 
         public PokemonViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageViewPokemon = itemView.findViewById(R.id.image_view_item_pokemon);
+            imageViewPokemon = itemView.findViewById(R.id.item_view_image);
             textViewPokemonName = itemView.findViewById(R.id.text_view_item_pokemon);
 
             itemView.setOnClickListener(new View.OnClickListener() {

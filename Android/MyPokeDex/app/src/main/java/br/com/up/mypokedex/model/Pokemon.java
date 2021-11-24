@@ -16,10 +16,11 @@ public class Pokemon implements Serializable {
     private ArrayList<String> Stats;
 
 
-    public Pokemon(int id, String name, String image) {
+    public Pokemon(int id, String name, String image, String genre) {
         this.id = id;
         this.name = name;
         this.image = image;
+        this.genre = genre;
     }
 
     public int getId() {
