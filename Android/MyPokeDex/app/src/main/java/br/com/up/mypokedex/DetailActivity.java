@@ -7,10 +7,8 @@ import android.os.Bundle;
 
 import java.util.ArrayList;
 
-import br.com.up.mypokedex.adapter.PokemonAdapter;
 import br.com.up.mypokedex.model.Pokemon;
 import br.com.up.mypokedex.network.PokeAPI;
-import br.com.up.mypokedex.network.PokeAPIDetails;
 
 public class DetailActivity extends AppCompatActivity {
     private RecyclerView recyclerViewDetails;
@@ -24,13 +22,12 @@ public class DetailActivity extends AppCompatActivity {
 
         Pokemon pokemon = (Pokemon) getIntent().getSerializableExtra("pokemon");
 
-        new PokeAPIDetails().getDetails(new PokeAPIDetails.PokeAPIDetailsListener() {
-            @Override
+        new PokeAPI().getPokemonDetails(new PokeAPI.PokeAPIDetailsListener() {
+
             public void onPokemonsDetailsMapper(ArrayList<Pokemon> pokemons) {
                 DetailActivity.this.pokemons.addAll(pokemons);
                 recyclerViewDetails.getAdapter().notifyDataSetChanged();
             }
         });
-
     }
 }

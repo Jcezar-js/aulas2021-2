@@ -1,5 +1,7 @@
 package br.com.up.mypokedex.model;
 
+import org.json.JSONArray;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -16,12 +18,23 @@ public class Pokemon implements Serializable {
     private ArrayList<String> Stats;
 
 
+    public Pokemon(int id, String name, String image, ArrayList<String> moves, ArrayList<String> types, ArrayList<String> abilities, ArrayList<String> stats) {
+        this.id = id;
+        this.name = name;
+        this.image = image;
+        this.moves = moves;
+        this.types = types;
+        this.abilities = abilities;
+        this.Stats = stats;
+    }
+
     public Pokemon(int id, String name, String image, String genre) {
         this.id = id;
         this.name = name;
         this.image = image;
         this.genre = genre;
     }
+
 
     public int getId() {
         return id;
@@ -46,6 +59,8 @@ public class Pokemon implements Serializable {
     public void setImage(String image) {
         this.image = image;
     }
+
+
 
     public ArrayList<String> getMoves() {
         return moves;

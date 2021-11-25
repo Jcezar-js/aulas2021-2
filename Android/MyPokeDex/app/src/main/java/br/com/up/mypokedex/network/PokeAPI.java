@@ -49,4 +49,36 @@ public class PokeAPI {
     public interface PokeAPIListener{
         void onPokemonsMapperFinish(ArrayList<Pokemon> pokemons);
     }
+
+
+
+    public void getPokemonDetails(PokeAPIDetailsListener detailsListener){
+        ConnectionAsyncTask connectionAsyncTask = new ConnectionAsyncTask(new ConnectionAsyncTask.ConnectionListener() {
+            @Override
+            public void onRequestFinish(JSONObject object) {
+                ArrayList <Pokemon> pokemons = new ArrayList<>();
+
+                try {
+                    JSONArray detailResults = object.getJSONArray("detailResults");
+
+                    for(int index = 0; index < detailResults.length(); index++){
+                        JSONObject objectDetailPokemon = detailResults.getJSONObject(index);
+
+                        String name = objectDetailPokemon.getString("name");
+                        String url = objectDetailPokemon.getString("url");
+                        String genre = objectDetailPokemon.getString("genre");
+                        String id = url.replace("https://pokeapi.co/api/v2/pokemon/", "");
+                        id = id.replace("/", "");
+                    }
+
+                }catch(Exception e){
+
+                }
+            }
+        });
+    }
+
+    public interface PokeAPIDetailsListener{
+
+    }
 }
