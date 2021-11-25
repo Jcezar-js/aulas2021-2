@@ -9,6 +9,8 @@ import java.util.ArrayList;
 
 import br.com.up.mypokedex.adapter.PokemonAdapter;
 import br.com.up.mypokedex.model.Pokemon;
+import br.com.up.mypokedex.network.PokeAPI;
+import br.com.up.mypokedex.network.PokeAPIDetails;
 
 public class DetailActivity extends AppCompatActivity {
     private RecyclerView recyclerViewDetails;
@@ -20,16 +22,15 @@ public class DetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detail);
         recyclerViewDetails = findViewById(R.id.recycler_details);
 
-        //Pokemon pokemon = (Pokemon) getIntent().getSerializableExtra("pokemon");
+        Pokemon pokemon = (Pokemon) getIntent().getSerializableExtra("pokemon");
 
-        PokemonAdapter adapter = new PokemonAdapter(pokemons, new PokemonAdapter.PokemonClickListener() {
+        new PokeAPIDetails().getDetails(new PokeAPIDetails.PokeAPIDetailsListener() {
             @Override
-            public void onPokemonClick(Pokemon pokemon) {
-
+            public void onPokemonsDetailsMapper(ArrayList<Pokemon> pokemons) {
+                DetailActivity.this.pokemons.addAll(pokemons);
+                recyclerViewDetails.getAdapter().notifyDataSetChanged();
             }
-        }){
-
-        };
+        });
 
     }
 }

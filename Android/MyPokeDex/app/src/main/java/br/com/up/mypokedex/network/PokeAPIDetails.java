@@ -30,10 +30,15 @@ public class PokeAPIDetails {
                     for (int index = 0 ; index < results.length(); index++){
 
                         JSONObject objectPokemon = results.getJSONObject(index);
-                        JSONObject objectMoves = moves.getJSONObject()
+                        JSONArray objectAbilities = abilities.getJSONArray(index);
+
                         String name = objectPokemon.getString("name");
                         String url = objectPokemon.getString("url");
                         String genre = objectPokemon.getString("genre");
+
+
+
+
                         String id = url.replace("https://pokeapi.co/api/v2/pokemon/","");
                         id = id.replace("/","");
                         String image = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/" + id + ".png";
@@ -47,7 +52,7 @@ public class PokeAPIDetails {
                 listener.onPokemonsDetailsMapper(details);
             }
         });
-        connectionAsyncTask.execute("https://pokeapi.co/api/v2/pokemon?limit=150");
+        connectionAsyncTask.execute("https://pokeapi.co/api/v2/pokemon/", "");
     }
 
 
