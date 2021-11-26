@@ -5,14 +5,13 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import br.com.up.mypokedex.MainActivity;
 import br.com.up.mypokedex.model.Pokemon;
 
 public class PokeAPI {
 
     public void getPokemon(PokeAPIListener listener){
 
-        ConnectionAsyncTask connectionAsyncTask =  new ConnectionAsyncTask(new ConnectionAsyncTask.ConnectionListener() {
+        ConnectionAsyncTask asyncTask =  new ConnectionAsyncTask(new ConnectionAsyncTask.ConnectionListener() {
 
             @Override
             public void onRequestFinish(JSONObject object) {
@@ -26,59 +25,68 @@ public class PokeAPI {
 
                         JSONObject objectPokemon = results.getJSONObject(index);
 
+                        int id = index +1;
                         String name = objectPokemon.getString("name");
                         String url = objectPokemon.getString("url");
-                        String genre = objectPokemon.getString("genre");
-                        String id = url.replace("https://pokeapi.co/api/v2/pokemon/","");
-                        id = id.replace("/","");
+                        url = url.replace("https://pokeapi.co/api/v2/pokemon/","");
+                        url = url.replace("/","");
                         String image = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/" + id + ".png";
-                        Pokemon pokemon = new Pokemon(Integer.parseInt(id), name,image,genre);
 
-                        pokemons.add(pokemon);
+                        pokemons.add(new Pokemon(id,name,image));
                     }
                 }catch (Exception e){
+
                 }
 
                 listener.onPokemonsMapperFinish(pokemons);
             }
         });
-        connectionAsyncTask.execute("https://pokeapi.co/api/v2/pokemon?limit=1500");
+        asyncTask.execute("https://pokeapi.co/api/v2/pokemon?limit=150");
     }
 
+
+
+    public void getPokemonDetail(int id, onPokeAPIDetailListener listener){
+        ConnectionAsyncTask asyncTask =  new ConnectionAsyncTask(new ConnectionAsyncTask.ConnectionListener() {
+
+            @Override
+            public void onRequestFinish(JSONObject object) {
+                ArrayList<Pokemon>pokemons = new ArrayList<>();
+
+                try {
+
+                    JSONArray results = object.getJSONArray("results");
+
+                    for (int index = 0 ; index < results.length(); index++){
+
+                        JSONObject objectPokemon = results.getJSONObject(index);
+
+                        int id = index +1;
+                        String name = objectPokemon.getString("name");
+                        String url = objectPokemon.getString("url");
+                        url = url.replace("https://pokeapi.co/api/v2/pokemon/","");
+                        url = url.replace("/","");
+                        String image = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/" + id + ".png";
+
+                        pokemons.add(new Pokemon(id,name,image));
+                    }
+                    listener.onFinish(pokemons);
+                }catch (Exception e){
+                    listener.onFinish(null);
+
+                }
+            }
+        });
+        asyncTask.execute("https://pokeapi.co/api/v2/pokemon?limit=150");
+    }
+
+
+    public interface onPokeAPIDetailListener{
+        void onFinish(ArrayList<Pokemon> pokemons);
+    }
 
     public interface PokeAPIListener{
         void onPokemonsMapperFinish(ArrayList<Pokemon> pokemons);
     }
 
-
-
-    public void getPokemonDetails(PokeAPIDetailsListener detailsListener){
-        ConnectionAsyncTask connectionAsyncTask = new ConnectionAsyncTask(new ConnectionAsyncTask.ConnectionListener() {
-            @Override
-            public void onRequestFinish(JSONObject object) {
-                ArrayList <Pokemon> pokemons = new ArrayList<>();
-
-                try {
-                    JSONArray detailResults = object.getJSONArray("detailResults");
-
-                    for(int index = 0; index < detailResults.length(); index++){
-                        JSONObject objectDetailPokemon = detailResults.getJSONObject(index);
-
-                        String name = objectDetailPokemon.getString("name");
-                        String url = objectDetailPokemon.getString("url");
-                        String genre = objectDetailPokemon.getString("genre");
-                        String id = url.replace("https://pokeapi.co/api/v2/pokemon/", "");
-                        id = id.replace("/", "");
-                    }
-
-                }catch(Exception e){
-
-                }
-            }
-        });
-    }
-
-    public interface PokeAPIDetailsListener{
-
-    }
 }

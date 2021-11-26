@@ -21,13 +21,5 @@ public class DetailActivity extends AppCompatActivity {
         recyclerViewDetails = findViewById(R.id.recycler_details);
 
         Pokemon pokemon = (Pokemon) getIntent().getSerializableExtra("pokemon");
-
-        new PokeAPI().getPokemonDetails(new PokeAPI.PokeAPIDetailsListener() {
-
-            public void onPokemonsDetailsMapper(ArrayList<Pokemon> pokemons) {
-                DetailActivity.this.pokemons.addAll(pokemons);
-                recyclerViewDetails.getAdapter().notifyDataSetChanged();
-            }
-        });
     }
 }

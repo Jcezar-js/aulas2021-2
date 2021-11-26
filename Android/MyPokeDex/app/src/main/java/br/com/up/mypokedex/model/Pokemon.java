@@ -15,24 +15,12 @@ public class Pokemon implements Serializable {
     private ArrayList<String> moves;
     private ArrayList<String> types;
     private ArrayList<String> abilities;
-    private ArrayList<String> Stats;
 
 
-    public Pokemon(int id, String name, String image, ArrayList<String> moves, ArrayList<String> types, ArrayList<String> abilities, ArrayList<String> stats) {
+    public Pokemon(int id, String name, String image) {
         this.id = id;
         this.name = name;
         this.image = image;
-        this.moves = moves;
-        this.types = types;
-        this.abilities = abilities;
-        this.Stats = stats;
-    }
-
-    public Pokemon(int id, String name, String image, String genre) {
-        this.id = id;
-        this.name = name;
-        this.image = image;
-        this.genre = genre;
     }
 
 
@@ -86,7 +74,4 @@ public class Pokemon implements Serializable {
 
     public void setAbilities(ArrayList<String> abilities) { this.abilities = abilities; }
 
-    public ArrayList<String> getStats() { return Stats; }
-
-    public void setStats(ArrayList<String> stats) { Stats = stats; }
 }

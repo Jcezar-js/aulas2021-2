@@ -1,5 +1,8 @@
 package br.com.up.mypokedex.adapter;
 
+//Watch https://www.youtube.com/watch?v=A2-X72_76ro
+
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -7,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.view.menu.MenuView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
@@ -73,14 +77,13 @@ public class PokemonAdapter extends RecyclerView.Adapter<PokemonAdapter.PokemonV
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
                     int position = getAdapterPosition();
                     Pokemon pokemon = pokemons.get(position);
-
                     listener.onPokemonClick(pokemon);
                 }
             });
         }
+
     }
     //listener custom, retorna o pokemon que foi clicado
     public interface PokemonClickListener{
