@@ -59,7 +59,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void callPokemonDetail(Pokemon pokemon){
         Intent intent = new Intent(this,DetailActivity.class);
-        intent.putExtra("pokemon", pokemon);
+        intent.putExtra("ID", pokemon.getId());
+        intent.putExtra("Nome", pokemon.getName());
+        intent.putExtra("Image", pokemon.getImage());
+
         startActivity(intent);
     }
 

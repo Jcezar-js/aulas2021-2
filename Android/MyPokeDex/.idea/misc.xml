@@ -5,10 +5,11 @@
       <map>
         <entry key="..\:/Projetos/faculdade/aulas2021-2/Android/MyPokeDex/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.21614583333333334" />
         <entry key="..\:/Projetos/faculdade/aulas2021-2/Android/MyPokeDex/app/src/main/res/drawable/ic_launcher_background.xml" value="0.21614583333333334" />
-        <entry key="..\:/Projetos/faculdade/aulas2021-2/Android/MyPokeDex/app/src/main/res/layout/activity_detail.xml" value="0.1" />
-        <entry key="..\:/Projetos/faculdade/aulas2021-2/Android/MyPokeDex/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Projetos/faculdade/aulas2021-2/Android/MyPokeDex/app/src/main/res/layout/activity_detail.xml" value="0.33" />
+        <entry key="..\:/Projetos/faculdade/aulas2021-2/Android/MyPokeDex/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Projetos/faculdade/aulas2021-2/Android/MyPokeDex/app/src/main/res/layout/detail_item_pokemon.xml" value="0.1625" />
         <entry key="..\:/Projetos/faculdade/aulas2021-2/Android/MyPokeDex/app/src/main/res/layout/fragment_pokemon_list.xml" value="0.1" />
-        <entry key="..\:/Projetos/faculdade/aulas2021-2/Android/MyPokeDex/app/src/main/res/layout/item_view_pokemon.xml" value="0.14945652173913043" />
+        <entry key="..\:/Projetos/faculdade/aulas2021-2/Android/MyPokeDex/app/src/main/res/layout/item_view_pokemon.xml" value="0.2" />
         <entry key="..\:/faculdade/aulas2021-2/Android/MyPokeDex/app/src/main/res/layout/activity_detail.xml" value="0.33" />
         <entry key="..\:/faculdade/aulas2021-2/Android/MyPokeDex/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/faculdade/aulas2021-2/Android/MyPokeDex/app/src/main/res/layout/item_view_pokemon.xml" value="0.22" />

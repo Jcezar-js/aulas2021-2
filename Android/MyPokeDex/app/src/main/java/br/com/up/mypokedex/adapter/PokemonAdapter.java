@@ -32,7 +32,6 @@ public class PokemonAdapter extends RecyclerView.Adapter<PokemonAdapter.PokemonV
         this.listener = listener;
     }
 
-
     //Métodos implementados para que o adapter funcione corretamente
     @NonNull
     @Override
@@ -40,22 +39,28 @@ public class PokemonAdapter extends RecyclerView.Adapter<PokemonAdapter.PokemonV
 
         //Layout inflater para converter um arquivo xml em um objeto "VIEW"
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View view = layoutInflater.inflate(R.layout.item_view_pokemon,parent,false);
+        View layout = layoutInflater.inflate(R.layout.item_view_pokemon,parent,false);
 
-        return new PokemonViewHolder(view);
+        return new PokemonViewHolder(layout);
     }
 
     //Serve para atualizar informações
     @Override
     public void onBindViewHolder(@NonNull PokemonViewHolder holder, int position) {
         Pokemon pokemon = pokemons.get(position);
-        holder.textViewPokemonName.setText(pokemon.getName());
+//        holder.textViewPokemonName.setText(pokemon.getName());
+//
+//        //Biblioteca download e posicionamento da imagem
+//        Picasso.get()
+//                .load(pokemon.getImage())
+//                .placeholder(R.drawable.ic_launcher_foreground)
+//                .into(holder.imageViewPokemon);
 
-        //Biblioteca download e posicionamento da imagem
-        Picasso.get()
-                .load(pokemon.getImage())
-                .placeholder(R.drawable.ic_launcher_foreground)
-                .into(holder.imageViewPokemon);
+        TextView textView = holder.itemView.findViewById(R.id.text_view_item_pokemon);
+        textView.setText(pokemon.getName());
+
+        ImageView imageView = holder.itemView.findViewById(R.id.item_view_image);
+        Picasso.get().load(pokemon.getImage()).into(imageView);
     }
 
     //Mostra a quantidade de itens da lista
@@ -66,14 +71,8 @@ public class PokemonAdapter extends RecyclerView.Adapter<PokemonAdapter.PokemonV
 
     public class PokemonViewHolder extends RecyclerView.ViewHolder{
 
-        public ImageView imageViewPokemon;
-        public TextView textViewPokemonName;
-
         public PokemonViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageViewPokemon = itemView.findViewById(R.id.item_view_image);
-            textViewPokemonName = itemView.findViewById(R.id.text_view_item_pokemon);
-
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
