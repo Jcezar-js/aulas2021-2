@@ -1,0 +1,76 @@
+/* Começando o CSS do site*/
+
+
+/* Estilizando a tag "P" */
+.destaque{
+    color: rgb(34, 184, 29);
+    background-color: rgb(15, 107, 114);
+    font-size: 30px;
+    text-align:center;
+   
+    padding: 10px;
+    margin: 10px;
+}
+.footer{
+    color: rgb(34, 184, 29);
+    font-size: 10px;
+    text-align:center;
+    background-color: rgb(15, 107, 114);
+    padding: 5px;
+    margin: 5px;
+
+}
+
+.footerPag02{
+    font-size: 15px;
+    color: rgb(34, 184, 29);
+    padding: 5px;
+    margin: 5px;
+}
+
+.headerPag01{
+    font-size: 20px;
+    color: rgb(34, 184, 29);
+    background-color: rgb(15, 107, 114);
+
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.sectionPag02{
+    color: rgb(34, 184, 29);
+    background-color: rgb(15, 107, 114);
+
+}
+
+/*Estruturais*/
+header{
+    background-color: rgba(119, 151, 240, 0.61);
+    text-align:center;
+
+    
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: aquamarine;
+}
+
+section{
+    text-align: center;
+    color: rgb(26, 54, 73);
+}
+
+footer{
+    background-color: rgb(15, 107, 114);
+    text-align:center;
+   
+    padding: 10px;
+    margin: 10px;
+}
+
+
+h1{
+    color: rgb(27, 106, 158);
+    font-size:75px;
+}

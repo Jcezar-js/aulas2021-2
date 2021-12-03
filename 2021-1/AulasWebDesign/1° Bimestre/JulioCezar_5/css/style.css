@@ -1,0 +1,243 @@
+/*Aplicando o responsivo
+Unidades relativas - aplicado em: 04/05/2021
+*/
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: #444;
+    font-size: 62.5%; /*Gambiarra*/
+}
+*, *:before, *:after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a{
+    color: #00ccff;
+    font-size: 1.6em; /* 16px */
+    text-decoration: none;
+}
+/* estilização do comportamento do mouse*/
+a:hover{
+    text-decoration: underline;
+
+}
+
+.container{
+    max-width:1128px; 
+    margin: 0 auto;
+}
+
+img,
+figure,
+video,
+embed {
+    max-width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 48px;
+    margin-top: 3.6em; /* 36px */
+    margin-bottom: 3.6em;/* 36px */
+}
+.marca{
+    float: left;
+    width: 20.74%; /* 234px - objeto / 1128px contexto */
+}
+
+nav{
+    float: right;
+    width: 74.47%; /* 840px objeto / 1128px contexto /// obj/contexto * 100 = resultado*/
+}
+
+nav ul{
+    float: right;
+
+}
+nav li{
+    font-size: 1.2em; /*12px*/
+    /* faz os menus aparecerem um do lado do outro*/
+    display: inline-block;
+    margin-left: 2.0em; /*20px*/
+    margin-top: 1.0em; /*10px*/
+}
+
+nav li a{
+    color: #999;
+}
+
+.banner{
+    background: url('../site_webdesign/img/banner.jpg');
+    height: 450px;
+    margin-bottom: 4.8em; /*48px*/
+    position: relative;
+    width: 100%;
+
+}
+
+.caixa{
+    position: absolute;
+    top: 48px;
+    background: rgba(0,0,0,0.6);
+    width: 42.55%; /* 480px objeto / 1128px contexto /// obj/contexto * 100 = resultado*/
+    padding: 2.4em 1.0em 2.4em 4.0em ; /* 24px-top / 10px-right / 24px-bottom / 40px-left*/
+    display: center;
+}
+
+h1{
+    font-size: 4.0em; /*40px*/
+    color: #fff;
+    font-weight: 200;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+.descrição{
+    text-align: center;
+}
+
+.destaque{
+    font-size: 1.8em; /*18px*/
+    color: #FFF;
+    font-weight: 200;
+}
+
+.coluna{
+    width: 23.4%;/* 264px objeto / 1128px contexto /// obj/contexto * 100 = resultado*/
+    float: left;
+    margin-right: 2.13%; /*18px objeto / 1128px contexto /// obj/contexto * 100 = resultado*/
+}
+.coluna:last-child{
+    margin-right: 0;
+}
+coluna p{
+    text-align: justify;
+    font-size: 1.6em; /*16px*/
+}
+
+h2{
+    font-size: 2.4em; /*24px*/
+}
+
+footer{
+    width: 100%;
+    margin-top: 2.4em; /*24px*/
+    margin-bottom: 2.4em; /*24px*/
+}
+.footer{
+    font-size: 1.0em; /*10px*/
+    margin-bottom: 0em; 
+}
+
+/*media queries*/
+@media screen and (max-width: 1128px){
+    .container{
+        padding:0 2.4em 0 2.4em; 
+    }
+}
+
+@media screen and (max-width: 845px){
+    .caixa{
+        width: 56%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .caixa{
+        width: 65%;    
+    }
+
+    .coluna{
+        width: 48%;
+        margin-bottom: 2.4em;
+        margin-right: 4%;
+    }
+    .coluna:nth-child(even){
+        margin-right:0;
+    }
+
+    .marca{
+        width: 22%;
+        margin-top: 1.2em;
+    }
+}
+
+@media screen and (max-width: 718px){
+    .banner{
+        position: relative;
+        float:left;
+        margin: 0;
+        height:150px;
+    }
+
+    .caixa{
+        position: relative;
+        display: block;
+        background: #000;
+        width: 100%;
+        float: left;
+        margin-top: 100px;
+    }
+
+    h1{
+        font-size: 2.5em;;
+    }
+
+    nav{
+        width: 70%;
+    }
+
+    section{
+        margin-top: 450px;
+    }
+
+    @media screen and (max-width: 640px){
+        nav{
+            width: 100%;
+        }
+
+        nav ul{
+            float:left;
+            font-size: 0.8em;
+        }
+
+        nav li:first-child{
+            margin-left: 0;
+        }
+    }
+
+    @media screen and (max-width: 520px){
+        .coluna{
+            width: 100%;
+            margin-right: 0;
+        }
+
+        .banner{
+            height: 120px;
+        }
+
+        .caixa{
+        position: relative;
+        display: block;
+        background: #000;
+        width: 100%;
+        float: left;
+        margin-top: 80px;
+        padding: 1.2em 2em 1.2em 2em;
+        }
+    }
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix { 
+    *zoom: 1;
+}

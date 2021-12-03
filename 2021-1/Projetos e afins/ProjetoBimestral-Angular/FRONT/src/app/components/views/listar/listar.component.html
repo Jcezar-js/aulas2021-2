@@ -1,0 +1,13 @@
+
+<ul> 
+    <li *ngFor>
+        {{ pessoa._id }}
+    </li>
+</ul>
+
+<select>
+    <option *ngFor="let pessoa of pessoas"> {{ pessoa._id }}</option>    
+</select>
+
+
+<a routerLink="pessoas/cadastrar" >Novo Cadastro</a> 
