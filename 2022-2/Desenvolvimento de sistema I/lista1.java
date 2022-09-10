@@ -151,9 +151,6 @@ public class lista1 {
         inicio = sc.nextInt();
       
       
-        int i;
-        Random gerador = new Random();
-      
           if(System.getProperty("os.name").contains("Windows"))
             new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
       
@@ -164,15 +161,10 @@ public class lista1 {
             System.out.println("Recebendo valores...\n");
       
       
-          int [] vetor = new int[1000];
          
+          ordenarVetor();          
       
-          for (i = 0; i < vetor.length; i++) {
-            vetor[i] = gerador.nextInt();
-      
-            Arrays.sort(vetor);
-            System.out.println(vetor[i]+",");
-          }
+         
           System.out.println("Seu Vetor ordenado! \n");
           System.out.println("Digite um nmero para sair: \n");
           inicio = sc.nextInt();
@@ -180,4 +172,20 @@ public class lista1 {
 
       System.out.println("saindo...");
   }
-}
+
+
+  public static void ordenarVetor() {
+      int i;
+      Random generator = new Random();
+      int [] vetor = new int[1000];
+
+
+      for (i=0; i<vetor.length; i++){
+
+        vetor[i] = generator.nextInt();
+
+        Arrays.sort(vetor);
+        System.out.println(vetor[i]+",");
+      }
+    }
+  }
