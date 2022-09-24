@@ -1,0 +1,40 @@
+Fazer uma EAP com os tópicos e atividades das aulas - Usar MS Project
+
+Concepção do projeto prático avaliativo:
+	✓Formar equipes (sugerido: entre 3 e 5 integrantes);
+	✓Idealizar um sistema comercial (que envolva
+		cadastros em banco de dados);
+	✓Registrar o processo de ideação.
+	
+Visando o projeto avaliativo da disciplina:
+	✓Apresente uma breve descrição do negócio e o
+		que o sistema propõe solucionar;
+	✓Identifique pelo menos três processos do
+		negócio para o qual será desenvolvido o sistema;
+	✓Mapeie cada um dos processos e gere os diagramas BPMN
+		correspondentes.
+		--- Cadastrar aluno (Kassiel), Registrar Faltas (Junior), Gerar relatório de faltas (Julio).
+	
+Visando o projeto avaliativo da disciplina:
+	✓ Descrever entre 10 e 15 requisitos de usuário (funcionais)
+		no formato de estória de usuário [exemplo pág. 41]; --- Já tem
+	✓ Especificar de forma detalhada (requisitos de sistema) pelo menos três
+		requisitos funcionais (uma funcionalidade core + um cadastro simples +
+		um relatório) [exemplo pág. 44];
+	✓ Listar entre 5 e 10 requisitos não-funcionais, classificando-os sob a norma
+		ISO/IEC 25010 [exemplo pág. 45]; --- Tem que ver
+	✓ Produzir diagrama simples da arquitetura do sistema [exemplo pág. 47]. --- Kassiel
+	
+Com base nas especificações de requisitos
+	(estórias de usuário + detalhamento), elaborar:
+	✓a EAP, no formato de representação hierárquica; --- Montar board Jira
+	✓o backlog/desconstrução para a primeira iteração.
+• Com base na EAP, elaborar:
+	✓O cronograma no formato de Gantt. --- Fazer no MS Projects
+	
+Com base nos requisitos funcionais identificados
+	anteriormente, produzir os casos de uso para o
+	sistema:
+	▪ Produzir as narrativas para cada caso de uso, com
+		estrutura mínima de acordo com o modelo fornecido; --- Perguntar se é relacionado ao BPMN
+	▪ Elaborar o diagrama de casos de uso. 

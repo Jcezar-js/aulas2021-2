@@ -1,6 +1,6 @@
 [Project]
-FileName=Project2.dev
-Name=Project3
+FileName=Simulador.dev
+Name=Simulador
 Type=1
 Ver=2
 ObjFiles=
@@ -12,7 +12,7 @@ MakeIncludes=
 Compiler=
 CppCompiler=
 Linker=
-IsCpp=0
+IsCpp=1
 Icon=
 ExeOutput=
 ObjectOutput=
