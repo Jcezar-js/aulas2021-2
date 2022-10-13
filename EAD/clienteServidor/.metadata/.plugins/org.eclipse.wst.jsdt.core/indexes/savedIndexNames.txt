@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/home/devpc/Documentos/Aulas-Faculdade/EAD/clienteServidor/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3170364654.index
+3282156441.index
+3195564035.index
+2350677953.index
+1821598505.index
+3143069851.index

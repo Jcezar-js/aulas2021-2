@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+/home/devpc/Documentos/clienteServidor/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/492273128.index
+/Unidade1/src/main/java
+/home/devpc/Documentos/Aulas-Faculdade/EAD/clienteServidor/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/492273128.index
+/Unidade1/src/main/java

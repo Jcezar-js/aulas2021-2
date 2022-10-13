@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Página do aluno</title>
+</head>
+<body>	
+
+<p align="center">
+
+	Aluno: <%=request.getParameter("nome") %> 
+	<br/><br/>
+	RGM: <%=request.getParameter("rgm") %>
+	<br/><br/>
+
+		Última atualização: <%=new java.util.Date() %>
+		
+</body>
+</html>

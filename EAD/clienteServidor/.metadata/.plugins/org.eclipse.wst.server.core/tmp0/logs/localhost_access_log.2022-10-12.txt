@@ -1,0 +1,44 @@
+127.0.0.1 - - [12/Oct/2022:16:16:22 -0300] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [12/Oct/2022:16:58:58 -0300] "-" 400 2187
+0:0:0:0:0:0:0:1 - - [12/Oct/2022:16:58:58 -0300] "-" 400 2181
+0:0:0:0:0:0:0:1 - - [12/Oct/2022:16:58:58 -0300] "-" 400 2187
+0:0:0:0:0:0:0:1 - - [12/Oct/2022:16:58:58 -0300] "-" 400 2213
+127.0.0.1 - - [12/Oct/2022:17:34:10 -0300] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [12/Oct/2022:17:34:20 -0300] "GET /Unidade1/index.jsp HTTP/1.1" 200 299
+127.0.0.1 - - [12/Oct/2022:17:34:21 -0300] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [12/Oct/2022:18:10:55 -0300] "GET /Unidade1/index.jsp?nome=julliul&rgm=1241234&enviar=Enviar HTTP/1.1" 200 299
+127.0.0.1 - - [12/Oct/2022:18:10:55 -0300] "GET /Unidade1/index.jsp?nome=julliul&rgm=1241234&enviar=Enviar HTTP/1.1" 200 299
+127.0.0.1 - - [12/Oct/2022:18:15:48 -0300] "GET /Unidade1/index.jsp?nome=julliul&rgm=1241234&enviar=Enviar HTTP/1.1" 200 292
+127.0.0.1 - - [12/Oct/2022:18:15:50 -0300] "GET /Unidade1/index.jsp?nome=julliul&rgm=1241234&enviar=Enviar HTTP/1.1" 200 292
+127.0.0.1 - - [12/Oct/2022:19:49:26 -0300] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [12/Oct/2022:19:49:35 -0300] "GET /Unidade1/index.jsp HTTP/1.1" 200 308
+127.0.0.1 - - [12/Oct/2022:19:49:38 -0300] "GET /Unidade1/alunoResponse.jsp?nome=&rgm=&enviar=Enviar HTTP/1.1" 200 117
+127.0.0.1 - - [12/Oct/2022:20:11:08 -0300] "GET /Unidade1/index.jsp HTTP/1.1" 200 308
+127.0.0.1 - - [12/Oct/2022:20:11:12 -0300] "GET /Unidade1/alunoResponse.jsp?nome=julliul&rgm=&enviar=Enviar HTTP/1.1" 200 131
+127.0.0.1 - - [12/Oct/2022:20:12:09 -0300] "GET /Unidade1/alunoResponse.jsp?nome=julliul&rgm=&enviar=Enviar HTTP/1.1" 200 139
+127.0.0.1 - - [12/Oct/2022:20:13:58 -0300] "GET /Unidade1/alunoResponse.jsp?nome=julio&rgm=12345&enviar=Enviar HTTP/1.1" 200 155
+127.0.0.1 - - [12/Oct/2022:20:15:05 -0300] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [12/Oct/2022:20:15:15 -0300] "GET /Unidade1/index.jsp HTTP/1.1" 200 322
+127.0.0.1 - - [12/Oct/2022:20:15:17 -0300] "GET /Unidade1/index.jsp HTTP/1.1" 200 322
+127.0.0.1 - - [12/Oct/2022:20:15:20 -0300] "POST /Unidade1/alunoResponse.jsp HTTP/1.1" 200 157
+127.0.0.1 - - [12/Oct/2022:20:15:31 -0300] "POST /Unidade1/alunoResponse.jsp HTTP/1.1" 200 153
+127.0.0.1 - - [12/Oct/2022:20:47:24 -0300] "GET /Unidade1/index.jsp HTTP/1.1" 200 322
+127.0.0.1 - - [12/Oct/2022:20:47:25 -0300] "GET /Unidade1/index.jsp HTTP/1.1" 200 322
+127.0.0.1 - - [12/Oct/2022:20:47:29 -0300] "POST /Unidade1/alunoResponse.jsp HTTP/1.1" 500 2391
+127.0.0.1 - - [12/Oct/2022:20:48:44 -0300] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [12/Oct/2022:20:48:51 -0300] "GET /Unidade1/index.jsp HTTP/1.1" 200 322
+127.0.0.1 - - [12/Oct/2022:20:48:57 -0300] "POST /Unidade1/alunoResponse.jsp HTTP/1.1" 200 234
+127.0.0.1 - - [12/Oct/2022:20:49:17 -0300] "POST /Unidade1/alunoResponse.jsp HTTP/1.1" 200 236
+127.0.0.1 - - [12/Oct/2022:20:49:41 -0300] "GET /Unidade1/index.jsp HTTP/1.1" 200 322
+127.0.0.1 - - [12/Oct/2022:20:49:46 -0300] "POST /Unidade1/alunoResponse.jsp HTTP/1.1" 200 248
+127.0.0.1 - - [12/Oct/2022:21:12:55 -0300] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [12/Oct/2022:21:13:00 -0300] "GET /Unidade1/index.jsp HTTP/1.1" 200 322
+127.0.0.1 - - [12/Oct/2022:21:13:06 -0300] "POST /Unidade1/alunoResponse.jsp HTTP/1.1" 200 232
+127.0.0.1 - - [12/Oct/2022:21:13:36 -0300] "POST /Unidade1/alunoResponse.jsp HTTP/1.1" 200 233
+127.0.0.1 - - [12/Oct/2022:21:14:17 -0300] "GET /Unidade1/index.jsp HTTP/1.1" 200 322
+127.0.0.1 - - [12/Oct/2022:21:14:21 -0300] "POST /Unidade1/alunoResponse.jsp HTTP/1.1" 200 232
+127.0.0.1 - - [12/Oct/2022:21:14:57 -0300] "POST /Unidade1/alunoResponse.jsp HTTP/1.1" 200 232
+127.0.0.1 - - [12/Oct/2022:21:15:01 -0300] "POST /Unidade1/alunoResponse.jsp HTTP/1.1" 200 231
+127.0.0.1 - - [12/Oct/2022:21:19:58 -0300] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [12/Oct/2022:21:20:09 -0300] "GET /Unidade1/index.jsp HTTP/1.1" 200 322
+127.0.0.1 - - [12/Oct/2022:21:20:14 -0300] "POST /Unidade1/alunoResponse.jsp HTTP/1.1" 200 236
