@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.tabela{
+	padding:7px;
+	border-style:dotted;
+	border-width:2px ;
+}
+.itens{
+	margin:30px;
+	color:gray;
+}
+
